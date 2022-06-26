@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -34,7 +35,7 @@
 
     <!-- --------*MAIN*-------- -->
     <main class="contacto">
-      <section class="contactanos">
+      <section class="contactanos" data-aos="fade-down-right">
         <h2>Contactanos</h2>
         <p>Llena con tus datos la siguiente informacion:</p>
         <form action="">
@@ -49,7 +50,7 @@
           <hr class="redondo" />
 
           <!-- metodo de contacto -->
-          <fieldset>
+          <fieldset data-aos="fade-down-left">
             <legend>¿Como prefieres que te contactemos?</legend>
             <label for="correo"><input type="radio" id="correo" name="forma-de-contacto" class="inline" value="correo" /> Por correo</label>
             <label for="telefono"><input type="radio" id="telefono" name="forma-de-contacto" class="inline" value="telefono" /> Por telefono</label>
@@ -61,7 +62,7 @@
           <hr class="redondo" />
 
           <!-- como llegaste a este sitio -->
-          <fieldset>
+          <fieldset data-aos="fade-down-right">
             <legend>¿Como llegaste a nuestra pagina?</legend>
             <select name="referido-por">
               <option value="">(Selecciona una opcion)</option>
@@ -73,8 +74,8 @@
             <label for="preguntas">¿Tienes preguntas?</label>
             <textarea id="preguntas" name="preguntas" rows="10" cols="100" placeholder="¿como me suscribo?..."></textarea>
           </fieldset>
-          <input type="submit" value="Enviar" class="input-btn" />
-          <input type="reset" value="Borrar" class="input-btn" />
+          <input type="submit" value="Enviar" class="input-btn" data-aos="slide-left" />
+          <input type="reset" value="Borrar" class="input-btn" data-aos="slide-right" />
         </form>
       </section>
     </main>
@@ -105,5 +106,10 @@
         </ul>
       </nav>
     </footer>
+    <!-- --------*JS ANIMATIONS*-------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
