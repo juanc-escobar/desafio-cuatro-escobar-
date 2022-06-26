@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- --------*HEADER*-------- -->
@@ -34,8 +35,8 @@
     <!-- --------*MAIN*-------- -->
     <main>
       <section class="conocenos">
-        <h2>Sobre Nosotros</h2>
-        <p class="conocenos__text">
+        <h2 data-aos="fade-right">Sobre Nosotros</h2>
+        <p class="conocenos__text" data-aos="fade-right">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, in ea eligendi, vel unde quidem nulla minima nobis voluptate illo assumenda
           esse rem asperiores nisi quam quisquam quod dolore numquam. Soluta reprehenderit, dolor quis praesentium qui, laudantium ex atque unde
           adipisci numquam, nulla quia voluptates quisquam reiciendis voluptatem asperiores quam sit neque eius nisi quaerat at quas aliquam quos? Vel
@@ -43,12 +44,12 @@
           nihil repellat, beatae ex alias dolorem fuga quidem reprehenderit quisquam corporis nam vitae deleniti accusamus architecto voluptas
           provident porro amet ullam ipsum?
         </p>
-        <img class="conocenos__img" src="https://picsum.photos/600/400?grayscale&random=1" alt="" />
-        <p class="conocenos__quote">
+        <img class="conocenos__img" src="https://picsum.photos/600/400?grayscale&random=1" alt="random" data-aos="fade-left" />
+        <p class="conocenos__quote" data-aos="fade-right">
           "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, magnam architecto. Alias excepturi similique quo."
         </p>
-        <img class="conocenos__img" src="https://picsum.photos/600/400?grayscale&random=2" alt="" />
-        <p class="conocenos__text">
+        <img class="conocenos__img" src="https://picsum.photos/600/400?grayscale&random=2" alt="random" data-aos="fade-right" />
+        <p class="conocenos__text" data-aos="fade-left">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptate sed? Obcaecati quibusdam ad incidunt similique tenetur!
           Repellendus, et doloribus aliquam provident recusandae itaque natus blanditiis cumque expedita obcaecati voluptatum velit necessitatibus non
           ad deleniti cupiditate nemo tempora? Quasi assumenda dolor repudiandae obcaecati placeat, aut deserunt dolores, laudantium consequuntur
@@ -84,5 +85,10 @@
         </ul>
       </nav>
     </footer>
+    <!-- --------*JS ANIMATIONS*-------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

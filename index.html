@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   
   <body>
@@ -36,11 +37,11 @@
     <main class="home">
       <section class="black">
         <div class="block">
-          <div class="block__content">
+          <div class="block__content" data-aos="zoom-in-down">
             <h1 class="block__title">Convierte tu hogar en un Smart-Home</h1>
             <p class="block__text text--white text--add">Vive como siempre soñaste</p>
           </div>
-          <figure class="block__img">
+          <figure class="block__img" data-aos="flip-down">
             <img src="./assets/images/test.png" alt="smart home" />
             <figcaption><a href="http://www.freepik.com">Designed by macrovector / Freepik</a></figcaption>
           </figure>
@@ -49,11 +50,11 @@
 
         </article class="attributes">
           <div class="block invert">
-              <div class="block__content">
+              <div class="block__content" data-aos="slide-left">
                 <h3 class="block__title">Control en la palma de tu mano</h3>
                 <p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae non voluptatibus, nulla aperiam, placeat consequuntur deleniti velit quos impedit numquam temporibus exercitationem corrupti consectetur voluptatem, eius quae officia nemo.</p>
               </div>
-            <figure class="block__img">
+            <figure class="block__img" data-aos="slide-right">
               <img src="./assets/images/image-use.jpg" alt="user control" />
               <figcaption><a href="http://www.freepik.com">Designed by stories / Freepik</a></figcaption>
             </figure>
@@ -62,11 +63,11 @@
 
       </article class="attributes">
         <div class="block">
-              <div class="block__content">
+              <div class="block__content" data-aos="slide-right">
               <h3 class="block__title">Multiples dispositivos</h3>
               <p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae non voluptatibus, nulla aperiam, placeat consequuntur deleniti velit quos impedit numquam temporibus exercitationem corrupti consectetur voluptatem, eius quae officia nemo.</p>
             </div>
-          <figure class="block__img">
+          <figure class="block__img" data-aos="slide-left">
             <img src="./assets/images/image-user2.jpg" alt="user control" />
             <figcaption><a href="http://www.freepik.com">Designed by stories / Freepik</a></figcaption>
           </figure>
@@ -75,11 +76,11 @@
 
       <section class="black attributes">
         <div class="block--add invert">
-          <div class="block__content">
+          <div class="block__content" data-aos="zoom-in-down">
             <h3 class="block__title text--white">Interfaz de usuario amigable</h3>
             <p class="block__text text--white text--add">Conoce todas las ventajas de nuestro sistema</p>
           </div>
-          <figure class="block__img">
+          <figure class="block__img" data-aos="flip-down">
             <img src="./assets/images/control-test.png" alt="smart home" />
             <figcaption><a href="http://www.freepik.com">Designed by macrovector / Freepik</a></figcaption>
           </figure>
@@ -88,11 +89,11 @@
     
       </article class="attributes">
         <div class="block">
-            <div class="block__content">
+            <div class="block__content" data-aos="slide-right">
               <h3 class="block__title">Personaliza tu hogar</h3>
               <p class="block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic recusandae non voluptatibus, nulla aperiam, placeat consequuntur deleniti velit quos impedit numquam temporibus exercitationem corrupti consectetur voluptatem, eius quae officia nemo.</p>
             </div>
-          <figure class="block__img">
+          <figure class="block__img" data-aos="slide-left">
             <img src="./assets/images/image-user3.jpg" alt="user control" />
             <figcaption><a href="http://www.freepik.com">Designed by stories / Freepik</a></figcaption>
           </figure>
@@ -124,5 +125,9 @@
         </ul>
       </nav>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
